@@ -5,3 +5,9 @@
   files: '\.org$'
   language: 'script'
   description: "Creates a markdown file from an org file."
+- id: arbitrary-command
+  name: 'arbitrary-command'
+  entry: scripts/arbitrary-command.sh
+  pass_filenames: false
+  language: 'script'
+  description: "Run an arbitrary shell command."

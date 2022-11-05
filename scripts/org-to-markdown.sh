@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Creates a markdown file from an org file."
+# Runs an emacs command to export org to markdown.
 
 set -e -o pipefail
 
