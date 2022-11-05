@@ -3,6 +3,5 @@
   name: 'org-to-markdown'
   entry: scripts/org-to-markdown.sh
   files: '\.org$'
-  pass_filenames: false
   language: 'script'
   description: "Creates a markdown file from an org file."
