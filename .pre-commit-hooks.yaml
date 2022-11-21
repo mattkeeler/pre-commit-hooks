@@ -17,3 +17,8 @@
   pass_filenames: false
   language: 'script'
   description: "Run an arbitrary shell command."
+- id: argo-lint
+  name: 'argo-lint'
+  entry: scripts/argo-lint.sh
+  language: 'script'
+  description: "Validate manifest files for Argo Workflows"
