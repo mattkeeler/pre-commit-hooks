@@ -20,5 +20,6 @@
 - id: argo-lint
   name: 'argo-lint'
   entry: scripts/argo-lint.sh
+  files: '\.yml$'
   language: 'script'
   description: "Validate manifest files for Argo Workflows"
