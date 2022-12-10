@@ -20,6 +20,12 @@
 - id: argo-lint
   name: 'argo-lint'
   entry: scripts/argo-lint.sh
-  files: '\.yml$'
   language: 'script'
+  types: [yaml]
   description: "Validate manifest files for Argo Workflows"
+- id: nuclei-validate
+  name: 'nuclei-validate'
+  entry: scripts/nuclei-validate.sh
+  language: 'script'
+  types: [yaml]
+  description: "Validate Nuclei templates"
