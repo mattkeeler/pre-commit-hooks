@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 #
-# Runs `nuclei -validate' against yaml files
-
-set -e -o pipefail
+# Runs `nuclei -validate` against yaml files
+set -eu
 
 if ! command -v nuclei &>/dev/null; then
 	echo "nuclei not found in your PATH" >&2
