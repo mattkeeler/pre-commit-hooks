@@ -1,31 +1,35 @@
 ---
 - id: org-to-markdown
   name: 'org-to-markdown'
-  entry: scripts/org-to-markdown.sh
+  entry: hooks/org-to-markdown.sh
   files: '\.org$'
   language: 'script'
   description: "Creates a markdown file from an org file."
+
 - id: org-to-pdf
   name: 'org-to-pdf'
-  entry: scripts/org-to-pdf.sh
+  entry: hooks/org-to-pdf.sh
   files: '\.org$'
   language: 'script'
   description: "Creates a pdf file from an org file."
+
 - id: arbitrary-command
   name: 'arbitrary-command'
-  entry: scripts/arbitrary-command.sh
+  entry: hooks/arbitrary-command.sh
   pass_filenames: false
   language: 'script'
   description: "Run an arbitrary shell command."
+
 - id: argo-lint
   name: 'argo-lint'
-  entry: scripts/argo-lint.sh
+  entry: hooks/argo-lint.sh
   language: 'script'
   types: [yaml]
   description: "Validate manifest files for Argo Workflows"
+
 - id: nuclei-validate
   name: 'nuclei-validate'
-  entry: scripts/nuclei-validate.sh
+  entry: hooks/nuclei-validate.sh
   language: 'script'
   types: [yaml]
   description: "Validate Nuclei templates"
