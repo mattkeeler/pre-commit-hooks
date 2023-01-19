@@ -9,5 +9,5 @@ if ! command -v nuclei &>/dev/null; then
 fi
 
 for f in "$@"; do
-	nuclei -validate -silent -disable-update-check -t "$f"
+	nuclei -validate -disable-update-check -t "$f"
 done
